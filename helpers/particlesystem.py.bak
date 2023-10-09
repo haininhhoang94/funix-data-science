@@ -1,0 +1,28 @@
+
+class ParticleSystem:
+    """
+    TODO: FIX
+    Calculate the area of a rectangle.
+    Args:
+        length (float): The length of the rectangle.
+        width (float): The width of the rectangle.
+    Returns:
+        float: The calculated area of the rectangle.
+    """
+    def __init__(self):
+        self.particles = []
+        self.G = 0.5
+    def addParticle(self, x, y):
+        self.particles.append(Particle(x, y))
+    def applyForce(self, force):
+        for p in self.particles:
+            p.applyForce(force)
+    def calculateForces(self):
+        # YOUR CODE HERE
+        # Calculate gravitational forces and apply them to particles.
+        # Gravitational forces are pair-wise. Each unique pairing of two particles.
+        # They are equal but opposite: particle A exerts a force on particle B 
+        # while particle B exerts that same amount of force on A (but in the opposite direction!).
+    def run(self):
+        for p in self.particles:
+            p.run()

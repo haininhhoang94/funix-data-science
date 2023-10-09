@@ -6,3 +6,5 @@ matplotlib
 black
 ruff
 tabulate
+jupytext
+pymysql
