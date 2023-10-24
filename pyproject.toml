@@ -1,0 +1,8 @@
+[tool.ruff]
+# Decrease the maximum line length to 79 characters.
+line-length = 79
+# include = ["*.py", "*.pyi", "**/pyproject.toml", "**/*.ipynb"]
+ignore = ["E501", "E402"]
+
+[tool.pyright]
+reportUnusedExpression = false
