@@ -12,3 +12,10 @@ DSP302x/ASM/ASM2/Student_VN_ASM2_new.md
 DSP302x/lab10/P48-Custom-Data-PUBG.csv
 DSP302x/Google_Playstore.csv
 DSP302x/ASM/ASM2/HaiNH_Student_VN_ASM2.ipynb.zip
+DSP303x/asm1/.ipynb_checkpoints
+DSP303x/asm1/College.csv
+DSP303x/asm2/pima-indians-diabetes.csv
+DSP303x/lab1-1/FuelConsumption.csv
+**/*.csv
+**/*.data
+DSP303x/lab7-1/__pycache__
