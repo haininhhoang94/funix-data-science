@@ -85,8 +85,10 @@ plt.show()
 
 # Since the scope of this lab is only EMISSION (y) vs ENGINESIZE(x)
 # Train test split
-def train_test_split(X_, y_, test_size=0.2):
-    msk = np.random.rand(len(X_)) < (1 - test_size)
+def train_test_split(df, test_size=0.2):
+    msk = np.random.rand(len(df) < (1 - test_size))
+    X_ = df.drop(columns=["CO2EMISSIONS"])
+    y_ = df["CO2EMISSIONS"]
     X_train = X_[msk]
     X_test = X_[~msk]
     y_train = y_[msk]
@@ -95,3 +97,13 @@ def train_test_split(X_, y_, test_size=0.2):
 
 
 X_train, X_test, y_train, y_test = train_test_split(X_[["ENGINESIZE"]], y_)
+
+linear_ = LinearRegression()
+linear_.fit(X=X_train, y=y_train)
+y_train_pred = linear_.predict(X=X_train)
+y_test_pred = linear_.predict(X=X_test)
+
+# Plot the regression line
+sns.scatterplot(x=X_train["ENGINESIZE"], y=y_train, label="Train")
+
+# %%
