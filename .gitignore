@@ -22,6 +22,7 @@ DSP303x/lab7-1/__pycache__
 .venv
 DSP301x/ASM/ASM2/
 **/.ipynb_checkpoints
+**/.ruff_cache
 DSP301x/labs/lab-1-to-5/.ipynb_checkpoints
 **/*Zone.Identifier
 DSP303x/Coursera/ML0101EN-Clas-SVM-cancer.ipynb:Zone.Identifier
